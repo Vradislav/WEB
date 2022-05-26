@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Hello!</h1>
+    <h3>Available users:</h3>
+    {% for user in users %}
+    <div><p>First Name: <b>{{user['first_name']}}</b> Last Name: <b>{{user['last_name']}}</b> Position: <b>{{user['position']}}</b></p></div>
+    {% endfor %}
+{% endblock %}
